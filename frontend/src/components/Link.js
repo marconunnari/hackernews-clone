@@ -4,7 +4,7 @@ import { useMutation, gql } from "@apollo/client";
 import { AUTH_TOKEN } from "../constants";
 import { timeDifferenceForDate } from "../utils";
 
-import { FEED_QUERY } from './LinkList';
+import { FEED_QUERY } from "./LinkList";
 
 const VOTE_MUTATION = gql`
   mutation VoteMutation($linkId: ID!) {
@@ -75,9 +75,13 @@ const Link = (props) => {
         )}
       </div>
       <div className="ml1">
-        <div>
+        <a
+          href={`${link.url.startsWith("http") ? "" : "https://"}${link.url}`}
+          target="_blank"
+          rel="noreferrer"
+        >
           {link.description} ({link.url})
-        </div>
+        </a>
         {
           <div className="f6 lh-copy gray">
             {link.votes.length} votes | by{" "}
