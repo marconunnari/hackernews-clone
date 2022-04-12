@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="center w85">
       <Header />
-      <div className="ph3 pv1 background-gray">
+      <div className="ph3 pv1 height-screen background-gray">
         <Routes>
           <Route path="/" element={<LinkList />} />
           <Route path="/create" element={<CreateLink />} />

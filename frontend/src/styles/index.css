@@ -20,6 +20,10 @@ input {
   background-color: rgb(246, 246, 239);
 }
 
+.height-screen {
+  min-height: 100vh;
+}
+
 .f11 {
   font-size: 11px;
 }
