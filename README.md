@@ -27,22 +27,26 @@ Built with the following technlogies and libraries
 - [x] Users can search links with specific terms
 - [x] When a link is created or upvoted all users present on the website will get the updated data in real time
 
-## Development
+## Installation
 
-- Clone the repo: `git clone https://github.com/marconunnari/hackernews-clone`
+1. **Clone the project**
 
-- Open a new tab in your terminal and go to the backend folder: `cd [your project directory]/backend`
+```
+ git clone https://github.com/marconunnari/hackernews-clone
+ cd hackernews-clone
+```
 
-- Install the dependencies: `yarn`
+2. **Install and run the backend (http://localhost:4000)**
+```
+cd backend
+yarn
+yarn prisma migrate dev
+yarn start
+```
 
-- Migrate the database: `yarn prisma migrate dev`
-
-- Start the server: `yarn start`
-
-- Open a new tab in your terminal and go to the frontend directory: `cd [your project directory]/frontend`
-
-- Install the dependencies: `yarn`
-
-- Start the server: `yarn start`
-
-- Go to `http://localhost:3000`
+3. **Install and run the frontend  (http://localhost:3000)**
+```
+cd frontend
+yarn
+yarn start
+```
