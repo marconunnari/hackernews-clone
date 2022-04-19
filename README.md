@@ -2,7 +2,7 @@
 
 A clone of [hackernews](https://en.wikipedia.org/wiki/Hacker_News) built with React, Node.js and GraphQL following the tutorials on https://howtographql.com
 
-https://user-images.githubusercontent.com/12419038/163018461-16c8f234-1f79-4cb6-96d7-47cc367462f0.mov
+[![Video](./Screenshot.png)](https://youtu.be/blVzWzKdY6M "Video")
 
 
 ## Technologies
